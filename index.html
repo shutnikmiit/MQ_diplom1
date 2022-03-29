@@ -11,6 +11,48 @@
 
 <body>
 
+  <div class="popup popup-active">
+    <div class="popup-container">
+      <button class="popup-close-button">
+        <span class="popup-close-hint">Кнопка закрытия всплывающего окна</span>
+      </button>
+      <div class="popup-feedback">
+        <h2 class="popup-title">Ваш фидбек</h2>
+        <form class="popup-form">
+          <div class="popup-form-row">
+            <label class="popup-form-group">
+              <span class="popup-form-hint">Как часто вы заходите на сайт?</span>
+              <select class="select">
+                <option>Почти каждый день</option>
+                <option>Раз в несколько дней</option>
+                <option>Раз в несколько недель</option>
+                <option>Несколько раз в год</option>
+              </select>
+            </label>
+          </div>
+          <div class="popup-form-row">
+            <span class="popup-form-hint">Вы подписаны на e-mail рассылку?</span>
+            <label class="popup-radio-group">
+              <input type="radio" class="radio" name="popup-radio-group" required>
+              <span class="popup-radio-group-text">Да</span>
+            </label>
+            <label class="popup-radio-group">
+              <input type="radio" class="radio" name="popup-radio-group" required>
+              <span class="popup-radio-group-text">Нет</span>
+            </label>
+          </div>
+          <div class="popup-form-row">
+            <span class="popup-form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="popup-text-field" placeholder="Может, больше рецептов?" required></textarea>
+          </div>
+          <div class="popup-form-row">
+            <button class="button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container-menu">
       <div class="menu">
