@@ -298,6 +298,117 @@ body {
   padding: 65px 15px;
 }
 
+/* __________ TRENDS SECTION _______________ */
+
+.trends {
+  width: 100%;
+}
+
+.trends-title {
+  margin: 55px 0 30px;
+
+  color: #0f0d0e;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.trends-title::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  margin: 10px auto 0;
+
+  background-color: #b59f5b;
+  opacity: 0.4;
+}
+
+.trends-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trend-post-a {
+  background-image: url("../images/trend1.jpg");
+}
+
+.trend-post-b {
+  background-image: url("../images/trend2.jpg")
+}
+
+.trend-post-c {
+  background-image: url("../images/trend3.jpg")
+}
+
+.trend-post-d {
+  background-image: url("../images/trend4.jpg")
+}
+
+.trend-post {
+  min-height: 320px;
+  width: calc(25% - 5px);
+  padding: 15px 20px;
+  display: flex;
+  align-items: flex-end;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000000;
+
+  position: relative;
+}
+
+.trend-post:nth-child(n + 5) {
+  margin-top: 5px;
+}
+
+.trend-post::before {
+  content: "";
+  background-color: #000000;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 5;
+  opacity: 0.6;
+}
+
+.trend-post-content {
+  width: 100%;
+  border: 3px solid rgba(181, 159, 91, .6);
+  padding: 35px;
+
+  position: relative;
+  z-index: 10;
+}
+
+.trend-post-title {
+  margin-top: 7px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+}
+
+.trend-post-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
+
+
+
 /* __________ POST LIST _______________*/
 
 .post-list {
