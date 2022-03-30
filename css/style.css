@@ -389,6 +389,11 @@ body {
   z-index: 10;
 }
 
+.content-tags {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .trend-post-title {
   margin-top: 7px;
 
@@ -399,15 +404,33 @@ body {
   text-transform: uppercase;
 }
 
+.trend-tag-link {
+  color: #b59f5b;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.trend-tag-link:first-child {
+  margin-right: 20px;
+
+}
+
+.trend-tag-link:hover {
+  text-decoration: underline;
+
+  color: #bdab72;
+}
+
 .trend-post-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-
-
-
-
+.trend-post-link:hover {
+  color: #bdab72
+}
 
 /* __________ POST LIST _______________*/
 
